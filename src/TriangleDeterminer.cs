@@ -1,6 +1,6 @@
 using System.Linq;
 
-namespace TrinagleApplication
+namespace TriangleApplication
 {
     public class TriangleDeterminer
     {

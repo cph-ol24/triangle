@@ -1,4 +1,4 @@
-namespace TrinagleApplication
+namespace TriangleApplication
 {
     public class Triangle
     {
