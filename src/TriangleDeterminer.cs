@@ -36,6 +36,9 @@ namespace TrinagleApplication
 
         private bool DetectInvalidTriangle(Triangle triangle)
         {
+            // Determine if the triangle is valid using Triangle Inequality Theorem
+            // http://www.wikihow.com/Determine-if-Three-Side-Lengths-Are-a-Triangle
+            
             return (
                 ((triangle.A + triangle.B) >= triangle.C) &&
                 ((triangle.A + triangle.C) >= triangle.B) &&
