@@ -1,0 +1,9 @@
+This is the test-cases
+
+
+Input               |           Expected output     |
+-----------------------------------------------------
+[3, 3, 3]           |           equilateral         |
+[5, 1, 1]           |           Error               |
+[3, 5, 3]           |           isosceles           |
+[8, 4, 12]          |           scalene             |
