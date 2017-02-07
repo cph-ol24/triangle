@@ -16,16 +16,16 @@ namespace TriangleApplication
             var triangleSides = new[] { triangle.A, triangle.B, triangle.C };
 
             // Find the unique sides of the triangle
-            var duplicates = triangleSides.Distinct().Count();
+            var uniqueSides = triangleSides.Distinct().Count();
 
             // All sides have different values
-            if (duplicates == 3)
+            if (uniqueSides == 3)
             {
                 return TriangleType.Scalene;
             }
 
             // If 2 sides have have different values
-            if (duplicates == 2)
+            if (uniqueSides == 2)
             {
                 return TriangleType.Isosceles;
             }
