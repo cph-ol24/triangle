@@ -2,9 +2,18 @@
   "version": "1.0.0-*",
   "buildOptions": {
     "debugType": "portable",
-    "emitEntryPoint": true
+    "emitEntryPoint": true,
+    "additionalArguments": [
+      "/ruleset:../ruleset.ruleset",
+      "/additionalfile:../stylecop.json"
+    ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "StyleCop.Analyzers": {
+      "version": "1.0.0",
+      "type": "build"
+    }
+  },
   "frameworks": {
     "netcoreapp1.0": {
       "dependencies": {

@@ -1,13 +1,13 @@
-using System.Linq;
-
 namespace TriangleApplication
 {
+    using System.Linq;
+
     public class TriangleDeterminer
     {
         public TriangleType Determine(Triangle triangle)
         {
             // Detect if the triangle is valid
-            if (!DetectInvalidTriangle(triangle))
+            if (!this.DetectInvalidTriangle(triangle))
             {
                 return TriangleType.Invalid;
             }
@@ -38,12 +38,9 @@ namespace TriangleApplication
         {
             // Determine if the triangle is valid using Triangle Inequality Theorem
             // http://www.wikihow.com/Determine-if-Three-Side-Lengths-Are-a-Triangle
-
-            return (
-                ((triangle.A + triangle.B) >= triangle.C) &&
+            return ((triangle.A + triangle.B) >= triangle.C) &&
                 ((triangle.A + triangle.C) >= triangle.B) &&
-                ((triangle.C + triangle.B) >= triangle.A)
-            );
+                ((triangle.C + triangle.B) >= triangle.A);
         }
     }
 }

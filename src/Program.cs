@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace TriangleApplication
+﻿namespace TriangleApplication
 {
+    using System;
+
     public class Program
     {
         public static void Main(string[] args)
